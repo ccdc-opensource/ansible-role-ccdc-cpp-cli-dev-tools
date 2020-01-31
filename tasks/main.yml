@@ -1,0 +1,47 @@
+---
+- name: Install developer productivity command line packages (Centos)
+  yum: 
+    name:
+      - man
+      - vim
+      - ctags # For vim
+      - mc
+      - screen
+    state: latest
+  when: "ansible_os_family == 'RedHat'"
+
+- name: Install developer productivity command line packages (Debian)
+  yum: 
+    name:
+      - man
+      - vim
+      - ctags # For vim
+      - mc
+      - screen
+    state: latest
+  when: "ansible_os_family == 'Debian'"
+  
+- name: Install developer productivity command line packages (MacOS)
+  homebrew:
+    name:
+      - 'm-cli'
+      - clang-format
+      - midnight-commander
+      - sqldiff
+      - sqlite
+      - ctags
+      - screen
+    state: present
+  when: "ansible_os_family == 'Darwin'"
+
+- name: developer productivity command line packages (windows)
+  win_chocolatey:
+    name: 
+      - mc
+    state: present
+  when: "ansible_os_family == 'Windows'"
+
+- name: install RBTools via pip
+  pip:
+    name: RBTools
+    state: latest
