@@ -11,7 +11,7 @@
   when: "ansible_os_family == 'RedHat'"
 
 - name: Install developer productivity command line packages (Debian)
-  yum: 
+  apt:
     name:
       - man
       - vim
