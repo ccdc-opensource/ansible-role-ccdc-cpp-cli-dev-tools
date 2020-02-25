@@ -10,6 +10,7 @@
     state: latest
     use_backend: yum
   when: "ansible_os_family == 'RedHat'"
+  become: yes
 
 - name: Install developer productivity command line packages (Debian)
   apt:
@@ -21,6 +22,7 @@
       - screen
     state: latest
   when: "ansible_os_family == 'Debian'"
+  become: yes
   
 - name: Install developer productivity command line packages (MacOS)
   homebrew:
