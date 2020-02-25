@@ -5,6 +5,7 @@
                 - mc
             state: present
 
+    # Ansible's Python-based modules, including pip, don't work on Windows so we have to do this instead
     - name: Install RBTools
         win_command: pip install rbtools
   
