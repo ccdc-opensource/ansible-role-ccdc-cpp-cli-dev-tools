@@ -1,0 +1,19 @@
+---
+    - name: Install developer productivity command line packages
+        apt:
+            name:
+                - man
+                - vim
+                - ctags # For vim
+                - mc
+                - screen
+            state: latest
+        become: yes
+
+    - name: install RBTools via pip
+        pip:
+            name: RBTools
+            state: latest
+            executable: pip3
+            extra_args: '--user'
+        
