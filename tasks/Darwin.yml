@@ -1,20 +1,19 @@
 ---
-    - name: Install developer productivity command line packages
-        homebrew:
-            name:
-                - 'm-cli'
-                - clang-format
-                - midnight-commander
-                - sqldiff
-                - sqlite
-                - ctags
-                - screen
-            state: present
+  - name: Install developer productivity command line packages
+    homebrew:
+      name:
+        - 'm-cli'
+        - clang-format
+        - midnight-commander
+        - sqldiff
+        - sqlite
+        - ctags
+        - screen
+      state: present
 
-    - name: install RBTools via pip
-        pip:
-            name: RBTools
-            state: latest
-            executable: pip3
-            extra_args: '--user'
-        
+  - name: install RBTools via pip
+    pip:
+      name: RBTools
+      state: latest
+      executable: pip3
+      extra_args: '--user'
