@@ -3,6 +3,8 @@
     win_chocolatey:
       name: 
         - mc
+        - diffutils # for diffing large results in conquest tests
+
       state: present
 
   # Ansible's Python-based modules, including pip, don't work on Windows so we have to do this instead

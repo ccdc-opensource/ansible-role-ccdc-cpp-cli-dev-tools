@@ -9,6 +9,7 @@
         - sqlite
         - ctags
         - screen
+        - diffutils # for diffing large results in conquest tests
       state: present
 
   - name: install RBTools via pip
