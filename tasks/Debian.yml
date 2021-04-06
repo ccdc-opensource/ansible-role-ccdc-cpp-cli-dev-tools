@@ -7,6 +7,7 @@
         - ctags # For vim
         - mc
         - screen
+        - diffutils # for diffing large results in conquest tests
       state: latest
     become: yes
 
