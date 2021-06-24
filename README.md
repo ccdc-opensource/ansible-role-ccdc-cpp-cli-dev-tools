@@ -45,7 +45,7 @@ None.
 
     - hosts: all
       roles:
-        - ccdc-cpp-cli-dev-tools
+        - ccdc.cpp_cli_dev_tools
 
 ## License
 
