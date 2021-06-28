@@ -1,6 +1,6 @@
 # Ansible Role: Install CLI dev tools
 
-Install and configure command-line development tools
+Install and configure command-line development tools useful when building the CSD Portfolio
 
 Applying this role will set up a range of command-line development tools on the machine for use as a development environment.
 
@@ -8,10 +8,10 @@ Applying this role will set up a range of command-line development tools on the 
 
 - man
 - vim
-- ctags # For vim
+- ctags
 - Midnight Commander
 - screen
-- RBTools
+- diffutils
 
 ### macOS
 
@@ -22,12 +22,11 @@ Applying this role will set up a range of command-line development tools on the 
 - sqlite
 - ctags
 - screen
-- RBTools
-
+- diffutils
 ### Windows
 
 - Midnight Commander
-- RBTools
+- diffutils
 
 ## Requirements
 
@@ -45,7 +44,7 @@ None.
 
     - hosts: all
       roles:
-        - ccdc-cpp-cli-dev-tools
+        - ccdc.cpp_cli_dev_tools
 
 ## License
 

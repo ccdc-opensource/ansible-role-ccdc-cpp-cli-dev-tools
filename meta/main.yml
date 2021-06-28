@@ -1,31 +1,31 @@
 ---
-    dependencies: []
-    
-    galaxy_info:
-      author: cbantaloukas@ccdc.cam.ac.uk
-      description: Command-line development tool setup for CCDC build machines.
-      company: "CCDC"
-      license: "license (BSD, MIT)"
-      min_ansible_version: 2.9
-      platforms:
-        - name: EL
-          versions:
-            - all
-        - name: Fedora
-          versions:
-            - all
-        - name: Debian
-          versions:
-            - all
-        - name: Ubuntu
-          versions:
-            - all
-        - name: Darwin
-          versions:
-            - all
-        - name: Windows
-          versions:
-            - all
-      galaxy_tags:
-        - system
-    
+dependencies: []
+
+galaxy_info:
+  role_name: cpp_cli_dev_tools
+  author: rockdreamer
+  description: Command-line development tool setup for CCDC build machines.
+  company: The Cambridge Crystallographic Data Centre
+  license: "license (BSD, MIT)"
+  min_ansible_version: 2.9
+  platforms:
+    - name: EL
+      versions:
+        - all
+    - name: Fedora
+      versions:
+        - all
+    - name: Debian
+      versions:
+        - all
+    - name: Ubuntu
+      versions:
+        - all
+    - name: Darwin
+      versions:
+        - all
+    - name: Windows
+      versions:
+        - all
+  galaxy_tags:
+    - system
