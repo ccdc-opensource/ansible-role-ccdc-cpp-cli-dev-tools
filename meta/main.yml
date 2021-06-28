@@ -21,9 +21,11 @@ galaxy_info:
     - name: Ubuntu
       versions:
         - all
-    - name: Darwin
+    - name: MacOSX
       versions:
-        - all
+        - 10.13
+        - 10.14
+        - 10.15
     - name: Windows
       versions:
         - all
