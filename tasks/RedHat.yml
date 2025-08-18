@@ -1,6 +1,6 @@
 ---
 - name: Install developer productivity command line packages
-  yum:
+  package:
     name:
       - man
       - vim
@@ -9,5 +9,4 @@
       - screen
       - diffutils # for diffing large results in conquest tests
     state: present
-    use_backend: yum
   become: true
